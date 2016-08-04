@@ -7,3 +7,9 @@ Most of my understanding of this algorithm came thanks to the following sites:
 * https://en.wikipedia.org/wiki/Mersenne_Twister - background information and pseudocode
 
 ## Usage
+To initialize the RNG:
+    generator = mersenne_rng(seed = 123)
+If you don't pass it a seed, it will default to 5489
+
+To generate a random number:
+    random_number = generator.get_random_number()
